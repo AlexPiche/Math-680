@@ -1,46 +1,46 @@
 This is BibTeX, Version 0.99d (TeX Live 2015)
 Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
 The top-level auxiliary file: piche_hw1.aux
-The style file: unsrtnat.bst
+The style file: plain.bst
 Database file #1: Untitled.bib
 You've used 1 entry,
-            2481 wiz_defined-function locations,
-            558 strings with 4563 characters,
-and the built_in function-call counts, 514 in all, are:
-= -- 51
+            2118 wiz_defined-function locations,
+            504 strings with 4132 characters,
+and the built_in function-call counts, 446 in all, are:
+= -- 49
 > -- 7
-< -- 2
-+ -- 4
+< -- 1
++ -- 3
 - -- 2
-* -- 26
-:= -- 73
+* -- 23
+:= -- 67
 add.period$ -- 3
 call.type$ -- 1
-change.case$ -- 2
-chr.to.int$ -- 1
+change.case$ -- 4
+chr.to.int$ -- 0
 cite$ -- 1
-duplicate$ -- 30
-empty$ -- 47
-format.name$ -- 3
-if$ -- 115
-int.to.chr$ -- 1
-int.to.str$ -- 2
+duplicate$ -- 22
+empty$ -- 36
+format.name$ -- 2
+if$ -- 101
+int.to.chr$ -- 0
+int.to.str$ -- 1
 missing$ -- 1
-newline$ -- 13
-num.names$ -- 3
-pop$ -- 9
+newline$ -- 8
+num.names$ -- 2
+pop$ -- 4
 preamble$ -- 1
-purify$ -- 1
+purify$ -- 3
 quote$ -- 0
-skip$ -- 27
+skip$ -- 22
 stack$ -- 0
-substring$ -- 42
-swap$ -- 13
+substring$ -- 45
+swap$ -- 12
 text.length$ -- 1
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 7
+type$ -- 4
 warning$ -- 0
 while$ -- 5
-width$ -- 0
-write$ -- 20
+width$ -- 2
+write$ -- 13

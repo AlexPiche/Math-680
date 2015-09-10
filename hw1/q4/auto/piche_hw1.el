@@ -4,7 +4,8 @@
    (TeX-run-style-hooks
     "latex2e"
     "article"
-    "art10")
+    "art10"
+    "mathtools")
    (LaTeX-add-bibliographies
     "Untitled")))
 
