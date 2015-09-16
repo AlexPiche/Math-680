@@ -1,8 +1,9 @@
 \begin{thebibliography}{1}
 
 \bibitem{friedman2001greedy}
-Jerome~H Friedman.
-\newblock Greedy function approximation: a gradient boosting machine.
-\newblock {\em Annals of statistics}, pages 1189--1232, 2001.
+J.H. Friedman.
+\newblock Greedy {Function} {Approximation}: {A} {Gradient} {Boosting}
+  {Machine}.
+\newblock {\em The Annals of Statistics}, 29(5):1189--1232, 2001.
 
 \end{thebibliography}

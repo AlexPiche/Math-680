@@ -1,6 +1,8 @@
-RFG <- function(i){
-  print(i)
-  p <- 10
+rm(list=ls())
+
+
+RFG <- function(i, p =10){
+  print(i+1)
   r <- rexp(n = 1, rate = 0.5)
   pl <- min(floor(1.5 + r), p)
 
@@ -13,27 +15,36 @@ RFG <- function(i){
   Vl <- Ul %*% Dl %*% t(Ul)
 
 
-  gl <- function(zl){
-    mul <- rnorm(pl)
+  gl <- function(zl, mul){
     exp(-0.5 * t(zl - mul) %*% Vl %*% (zl - mul))
   }
 
+  # should al be sample at each iterations
   al <- runif(20, min = -1, max = 1)
 
-  xx <- rep(0, 20)
+  glzl <- rep(0, 20)
   
   for(i in 1:20){
     Wl <- sample(x = 1:p)
     zl <- x[Wl[1:pl]]
-    xx[i] <- gl(zl)
+    mul <- rnorm(pl)
+    glzl[i] <- gl(zl, mul)
   }
   
-  f <- t(al) %*% xx
+  f <- t(al) %*% glzl
   y <- f + rnorm(1)
 
   toRet <- data.frame(y, t(x))
   toRet
 }
 
-kk[] <- parallel::mclapply(1:100, RFG)
-kk <- as.data.frame(do.call(rbind, kk))
+multiRFG <- function(n = 100, p = 10){
+  temp <- parallel::mclapply(1:n, RFG, p = p)
+  temp <- as.data.frame(do.call(rbind, temp))
+  temp
+}
+
+xx <- multiRFG()
+
+#system.time(multiRFG())
+
