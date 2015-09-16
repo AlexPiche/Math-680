@@ -2,6 +2,7 @@ rm(list=ls())
 
 
 multiRFG <- function(p = 10, n = 100){
+	print("hello world")
   x <- matrix(rnorm(p*n), nrow = n, byrow = T)
 
 
@@ -33,7 +34,6 @@ multiRFG <- function(p = 10, n = 100){
     zl <- matrix(0, nrow = 10, ncol = 20)
     glzl <- rep(0, 20)
     for(i in 1:20){
-      print(i)
       print(x[i])
       print(Wl[1:pl[i]])
       zl <- x[Wl[1:pl[i]]]
@@ -52,4 +52,5 @@ multiRFG <- function(p = 10, n = 100){
   toRet
 }
 
-xx <- multiRFG()
+myRFG <- multiRFG()
+summary(myRFG)
